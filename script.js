@@ -2,7 +2,7 @@ async function enviarPregunta() {
     const pregunta = document.getElementById("pregunta").value;
     const respuestaDiv = document.getElementById("chat");
 
-    const resp = await fetch("https://https://backend-render-fn6z.onrender.com/api/chat", {
+    const resp = await fetch("https://backend-render-fn6z.onrender.com/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ pregunta })
